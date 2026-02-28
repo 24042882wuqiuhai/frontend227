@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase
+
+  build:
+    commands:
+      - echo Build started on $(date)
+      - npm install
+      - echo npm install completed on $(date)
+      - npm run build
+      - echo npm run build completed on $(date)
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - ls -l ./dist/shop
+
+artifacts:
+  files:
+    - dist/shop/**/*   
+    # - dist/shop/*
+    # - dist/shop/assets/*
+    # - appspec.yml
