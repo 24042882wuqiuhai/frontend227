@@ -1,0 +1,88 @@
+/* 页面背景 */
+body {
+  background: radial-gradient(circle at 20% 20%, #0f2027, #0b1c2d 40%, #050d18 100%);
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+/* 容器（响应式核心） */
+.tech-container {
+  width: 90%;
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 45px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* 标题 */
+h1 {
+  text-align: center;
+  color: #00ffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+/* label */
+label {
+  color: #8be9fd;
+  font-size: 0.95rem;
+}
+
+/* 输入框 */
+.form-control {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  border-radius: 8px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #00ffff;
+  box-shadow: 0 0 12px #00ffff;
+  color: #ffffff;
+}
+
+/* 错误提示 */
+.form-group div {
+  font-size: 0.85rem;
+  margin-top: 4px;
+  color: #ff6b6b;
+}
+
+/* 按钮 */
+.btn-primary {
+  background: linear-gradient(90deg, #00ffff, #007cf0);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #007cf0, #00ffff);
+  box-shadow: 0 0 18px #00ffff;
+  transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+/* 手机优化 */
+@media (max-width: 576px) {
+  .tech-container {
+    padding: 30px 25px;
+    margin: 40px auto;
+  }
+}
