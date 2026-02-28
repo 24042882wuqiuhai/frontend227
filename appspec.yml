@@ -1,4 +1,4 @@
-version: 0.0  # CodeDeploy EC2 部署的固定写法。
+version: 0.0  # CodeDeploy EC2 部署的固定写法。 
 os: linux
 
 files:
